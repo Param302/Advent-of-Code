@@ -38,6 +38,8 @@ In this example, there are 7 measurements that are larger than the previous meas
 
 **How many measurements are larger than the previous measurement?**
 
+[My Input](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_1%20Sonar%20Sweep/input.txt)
+
 My answer is `1451`.
 [Code](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_1%20Sonar%20Sweep/part_1.py)
 
@@ -75,6 +77,8 @@ H: 792 (increased)
 In this example, there are `5` sums that are larger than the previous sum.
 
 Consider sums of a three-measurement sliding window. **How many sums are larger than the previous sum?**
+
+[Input](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_1%20Sonar%20Sweep/input.txt) is same as above.
 
 My answer is `1395`.
 [Code](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_1%20Sonar%20Sweep/part_2.py)

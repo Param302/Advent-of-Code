@@ -5,14 +5,15 @@ horizontal, depth, aim = 0, 0, 0
 
 for instruction in instructions:
     way, x = instruction.split()
-    if way == "forward":
-        horizontal += int(x)
-        depth += (aim*int(x))
+    match way:
+        case "forward":
+            horizontal += int(x)
+            depth += (aim*int(x))
 
-    elif way == "down":
-        aim += int(x)
+        case "down":
+            aim += int(x)
 
-    else:
-        aim -= int(x)
+        case "up":
+            aim -= int(x)
 
 print(horizontal*depth)

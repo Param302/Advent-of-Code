@@ -36,11 +36,11 @@ The epsilon rate is calculated in a similar way; rather than use the most common
 
 Use the binary numbers in your diagnostic report to calculate the gamma rate and epsilon rate, then multiply them together. **What is the power consumption of the submarine?** (Be sure to represent your answer in decimal, not binary.)
 
-[My Input]()
+[My Input](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_3%20Binary%20Diagnostic/input.txt)
 
 My answer is `3912944`.
 
-[Code]()
+[Code](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_3%20Binary%20Diagnostic/part_1.py)
 
 ## ---Part 2---
 
@@ -81,11 +81,11 @@ Finally, to find the life support rating, multiply the oxygen generator rating (
 
 Use the binary numbers in your diagnostic report to calculate the oxygen generator rating and CO2 scrubber rating, then multiply them together. **What is the life support rating of the submarine?** (Be sure to represent your answer in decimal, not binary.)
 
-[Input]() is same as above.
+[Input](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_3%20Binary%20Diagnostic/input.txt) is same as above.
 
 My answer is `4996233`.
 
-[Code]()
+[Code](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_3%20Binary%20Diagnostic/part_2.py) done using recursion!
 
 
 

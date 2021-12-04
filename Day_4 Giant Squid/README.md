@@ -65,11 +65,11 @@ The **score** of the winning board can now be calculated. Start by finding the *
 
 To guarantee victory against the giant squid, figure out which board will win first. **What will your final score be if you choose that board?**
 
-[Input]()
+My [Input](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_4%20Giant%20Squid/input.txt)
 
 My answer is **`55770`**.
 
-[Code]()
+[Code](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_4%20Giant%20Squid/part_1.py)
 
 
 ## ---Part 2---

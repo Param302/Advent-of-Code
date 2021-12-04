@@ -32,6 +32,14 @@ The submarine has a **bingo subsystem** to help passengers (currently, you and t
  2  0 12  3  7
  ```
 After the first five numbers are drawn (`7`, `4`, `9`,`5`, and `11`), there are no winners, but the boards are marked as follows (shown here adjacent to each other to save space):
+
+<code>22 13 17 <em>11</em>  0         3 15  0  2 22        14 21 17 24  <em>4</em>
+ 8  2 23  <em>4</em> 24         <em>9</em> 18 13 17  <em>5</em>        10 16 15  <em>9</em> 19
+21  <em>9</em> 14 16  <em>7</em>        19  8  <em>7</em> 25 23        18  8 23 26 20
+ 6 10  3 18  <em>5</em>        20 <em>11</em> 10 24  <em>4</em>        22 <em>11</em> 13  6  <em>5</em>
+ 1 12 20 15 19        14 21 16 12  6         2  0 12  3  <em>7</em>
+</code>
+
 `22 13 17 `**`11`**`  0         3 15  0  2 22        14 21 17 24  `**`4`**
 
 

@@ -1,7 +1,7 @@
 # Day 7: The Treachery of Whales
 Source: https://adventofcode.com/2021/day/7
 
-##--- Part 1 ---
+## --- Part 1 ---
 
 A giant whale has decided your submarine is its next meal, and it's much faster than you are. There's nowhere to run!
 
@@ -43,7 +43,7 @@ My answer is `344138`.
 [Code](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_7%20The%20Treachery%20of%20Whales/part_1.py)
 
 
-##--- Part 2 ---
+## --- Part 2 ---
 
 The crabs don't seem interested in your proposed solution. Perhaps you misunderstand crab engineering?
 

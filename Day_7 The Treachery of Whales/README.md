@@ -16,6 +16,7 @@ You quickly make a list of **the horizontal position of each crab** (your puzzle
 For example, consider the following horizontal positions:
 
 ```16,1,2,0,4,2,7,1,2,14```
+
 This means there's a crab with horizontal position `16`, a crab with horizontal position `1`, and so on.
 
 Each change of 1 step in horizontal position of a single crab costs 1 fuel. You could choose any horizontal position to align them all on, but the one that costs the least fuel is horizontal position `2`:
@@ -35,11 +36,11 @@ This costs a total of `37` fuel. This is the cheapest possible outcome; more exp
 
 Determine the horizontal position that the crabs can align to using the least fuel possible. **How much fuel must they spend to align to that position?**
 
-[My Input]()
+[My Input](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_7%20The%20Treachery%20of%20Whales/input.txt)
 
 My answer is `344138`.
 
-[Code]()
+[Code](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_7%20The%20Treachery%20of%20Whales/part_1.py)
 
 
 ##--- Part 2 ---
@@ -65,8 +66,8 @@ This costs a total of **`168`** fuel. This is the new cheapest possible outcome;
 
 Determine the horizontal position that the crabs can align to using the least fuel possible so they can make you an escape route! **How much fuel must they spend to align to that position?**
 
-[My Input]()
+[My Input](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_7%20The%20Treachery%20of%20Whales/input.txt)
 
 My answer is `94862124`.
 
-[Code]()
+[Code](https://github.com/Param302/Advent-of-Code-2021/blob/main/Day_7%20The%20Treachery%20of%20Whales/part_2.py)

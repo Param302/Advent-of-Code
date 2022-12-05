@@ -1,31 +1,52 @@
-with open("./inputs/day4.txt") as f:
-    assignment_pairs = [
-        [
-            set(range(int(i.split('-')[0]), int(i.split('-')[1])+1))
-            for i in pair.split(',')
-        ] 
-        for pair in f
-        ]
+with open("./inputs/day5.txt") as f:
+    temp_crates = []
+    for i in f:
+        if i == "\n":
+            break
+        temp_crates.append(i[:-1])
 
-# Part 1
-n_fully_contains = 0
-for i in assignment_pairs:
-    pair1, pair2 = i
-    if pair1.issubset(pair2) or pair2.issubset(pair1):
-        n_fully_contains += 1
+    moves = []      # [n crates, from, to]
+    for move in f:
+        _, crates, _, from_stack, _, to_stack = move.strip().split()
+        moves.append([int(crates), int(from_stack), int(to_stack)])
 
-print(n_fully_contains)
+temp_crates.pop()
+
+# replacing empty crate slots with 0
+for i in range(len(temp_crates)):
+    temp_crates[i] = temp_crates[i].replace(' '*4, " 0 ").split()
+
+temp_crates.append(None) if len(temp_crates) < len(temp_crates[0]) else ...
+
+# arranging all crates in their stacks
+stacks = {}
+stack_no = 1
+for i in range(len(temp_crates[i])):
+    for j in range(len(temp_crates)-1, -1, -1):
+        stacks.setdefault(stack_no, [])
+        if temp_crates[j] is None:
+            continue
+        if temp_crates[j][i]=='0':
+            continue
+        stacks[stack_no].append(temp_crates[j][i][1])
+    stack_no += 1
+
+# Part 1:
+for move in moves:
+    crates, from_stack, to_stack = move
+    for n in range(crates):
+        stacks[to_stack].append(stacks[from_stack].pop())
+
+top_stacks = ''.join(stacks[i][-1] for i in stacks)
+print(top_stacks)
 
 
-# Part 2
-def is_overlap(pair1, pair2):
-    p1_in_p2 = any(i in pair2 for i in pair1)
-    p2_in_p1 = any(i in pair1 for i in pair2)
-    return p1_in_p2 and p2_in_p1
+for move in moves:
+    crates, from_stack, to_stack = move
+    ordered_crates = []
+    for n in range(crates):
+        ordered_crates.append(stacks[from_stack].pop())
+    stacks[to_stack].extend(ordered_crates[::-1])
 
-n_overlaps = 0
-for i in assignment_pairs:
-    pair1, pair2 = i
-    if is_overlap(pair1, pair2):
-        n_overlaps += 1
-print(n_overlaps)
+top_stacks = ''.join(stacks[i][-1] for i in stacks)
+print(top_stacks)
